@@ -1,0 +1,18 @@
+Package: pcoqs
+Title: Differentially Private Conformal Prediction
+Version: 0.1.0
+Authors@R: 
+    person("Roberto", "Molinari", email = "roberto.molinari@hotmail.it", role = c("aut", "cre"))
+Maintainer: The package maintainer <roberto.molinari@hotmail.it>
+Description: Implements differentially private quantile estimation for conformal prediction in both regression and classification tasks. Provides interval and set-valued predictions using private noise-injected score quantiles.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: 
+    testthat,
+    nnet,
+    dplyr

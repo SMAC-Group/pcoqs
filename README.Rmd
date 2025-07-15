@@ -1,40 +1,40 @@
-pcoqs
-================
+---
+title: "pcoqs"
+output: github_document
+---
 
 <img src="man/figures/peacocks.png" align="right" height="200" />
 
 **Differentially Private Conformal Prediction**  
-An R package for producing differentially private interval and
-set-valued predictions for regression and classification.
+An R package for producing differentially private interval and set-valued predictions for regression and classification.
 
-------------------------------------------------------------------------
+---
 
 ## 🔍 Overview
 
-`pcoqs` provides functionality for conformal prediction enhanced with
-differential privacy. It supports:
+`pcoqs` provides functionality for conformal prediction enhanced with differential privacy. It supports:
 
 - Regression prediction intervals  
 - Classification prediction sets (multiclass + binary)  
 - Custom nonconformity scores and model/predict wrappers  
 - Gaussian noise injection for private quantile estimation
 
-------------------------------------------------------------------------
+---
 
 ## 🧪 Installation
 
-``` r
+```r
 # Install from GitHub (requires devtools)
 devtools::install_github("SMAC-Group/pcoqs")
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 🚀 Quick Start
 
 ### Regression Example
 
-``` r
+```r
 library(pcoqs)
 
 set.seed(123)
@@ -49,7 +49,7 @@ head(result$output)
 
 ### Classification Example
 
-``` r
+```r
 library(pcoqs)
 library(nnet)
 
@@ -77,20 +77,19 @@ result <- p_coqs(
 head(result$output)
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 📘 Documentation
 
-See function documentation using `?p_coqs`, `?priv_quant`, and
-`?noisy_rc` once installed.
+See function documentation using `?p_coqs`, `?priv_quant`, and `?noisy_rc` once installed.
 
-------------------------------------------------------------------------
+---
 
 ## 🛡️ License
 
 MIT © Roberto Molinari
 
-------------------------------------------------------------------------
+---
 
 ## 🦚 Peacocks for Privacy
 

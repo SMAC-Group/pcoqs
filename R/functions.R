@@ -85,10 +85,10 @@ priv_quant <- function(data, alpha, rho, lower_bound = 0, upper_bound = 1, delta
 #' X <- matrix(rnorm(100 * 3), ncol = 3)
 #' Y <- X %*% c(1, -2, 1) + rnorm(100)
 #' model <- lm(Y ~ ., data = data.frame(Y, X))
-#' result <- p_coqs(model, X, Y, X,
+#' result <- pcoqs(model, X, Y, X,
 #'                 alpha = 0.1, rho = 1.0)
 #' head(result$output)
-p_coqs <- function(model, X_cal, Y_cal, X_test,
+pcoqs <- function(model, X_cal, Y_cal, X_test,
                   alpha = 0.1, rho = 1,
                   predict_fun = function(model, X, ...) predict(model, newdata = data.frame(X), ...),
                   score_fun = function(y, y_hat) abs(y - y_hat),

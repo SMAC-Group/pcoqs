@@ -79,6 +79,26 @@ head(result$output)
 
 ------------------------------------------------------------------------
 
+## 📄 Reference & Reproducibility
+
+The methods implemented in this package are based on the paper:
+
+> **Differentially Private Conformal Prediction via Quantile Binary
+> Search**  
+> *Ogonnaya Michael Romanus and Roberto Molinari*  
+> Transactions on Machine Learning Research (TMLR)
+
+All **Python code used to generate the experimental results in the
+paper** (including simulations and real-data experiments) is available
+in the repository under the folder:
+
+    paper_codes/
+
+This folder is provided for full reproducibility of the empirical
+results reported in the manuscript.
+
+------------------------------------------------------------------------
+
 ## 📘 Documentation
 
 See function documentation using `?pcoqs`, `?priv_quant`, and
@@ -91,7 +111,3 @@ See function documentation using `?pcoqs`, `?priv_quant`, and
 MIT © Roberto Molinari
 
 ------------------------------------------------------------------------
-
-## 🦚 Peacocks for Privacy
-
-Because statistical elegance deserves visual elegance.
